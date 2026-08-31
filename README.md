@@ -1,10 +1,10 @@
 # oc-lark 官网
 
-这是 oc-lark 的产品官网与 GitHub Pages 静态落地页。当前为第二轮 UI 升级版（`web-refresh-02`），使用单文件 `index.html`，以产品官网节奏呈现品牌导航、Hero、终端窗口、核心能力、架构流程、私聊/群聊与审批交互、CLI 快速开始、本地 Web 控制台预览、开发版/正式版边界、FAQ 与 footer。
+这是 oc-lark 的产品官网与 GitHub Pages 静态落地页。当前为第三轮 UI 改造版（`web-refresh-03`），使用单文件 `index.html`，以成熟 landing page 的节奏呈现品牌导航、中心化 Hero、版本与许可证信息、终端展示、核心特性、架构流程、CLI/飞书命令、配置指南、效果展示、本地控制台、FAQ 与页脚。
 
 ## 产品定位
 
-oc-lark 是独立 Python 服务，连接飞书与原生 `opencode serve`，不替换 OpenCode 执行引擎，也不是云托管平台。已实现能力包括：
+oc-lark 是独立 Python 服务，连接飞书与原生 `opencode serve`。它不是 OpenCode 的替代品，也不是云托管平台；OpenCode Server 继续负责模型、工具与会话执行。已实现能力包括：
 
 - 飞书 WebSocket 消息接收；私聊、群聊、topic/thread 上下文；
 - OpenCode SSE 会话事件与实时输出回传；
@@ -12,7 +12,7 @@ oc-lark 是独立 Python 服务，连接飞书与原生 `opencode serve`，不�
 - 图片消息、会话关联、CLI 服务管理；
 - 本地 Web 控制台的状态检查与通知入口。
 
-页面中的聊天、终端、控制台和审批内容是前端展示演示，不代表真实后端返回值。
+当前不接入多 Agent、Nexus 或云托管能力。页面中的聊天、终端、控制台和审批内容是前端展示演示，不代表真实后端返回值。页面展示 MIT License 信息；具体服务版本与发布信息以服务仓库为准。当前提供资产开发版，正式版仍在规划中。
 
 ## GitHub Pages
 
@@ -20,7 +20,7 @@ oc-lark 是独立 Python 服务，连接飞书与原生 `opencode serve`，不�
 
 页面地址：<https://wyili.github.io/oc-lark-web/>
 
-GitHub Pages 只静态托管 HTML/CSS/JavaScript，不会启动 Python 后端。页面无需安装前端依赖，可直接部署或自托管。
+GitHub Pages 只静态托管 HTML/CSS/JavaScript，不会启动 Python 后端。页面无需安装前端依赖，可直接部署或自托管；单文件资源使用相对/内联方式，不依赖站点根路径，适配 `/oc-lark-web/` base path。
 
 ## 本地控制台与安全边界
 
